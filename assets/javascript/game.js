@@ -174,6 +174,7 @@ $("button.attack").on( "click", function() {
 		if (han.healthPoints <= 0){
 			han.isDefender = false;
 			han.isDefeated = true;
+			$("div.message").html("You have defeated Han Solo. Please choose another enemy to attack.");
 			$(".han-d").hide();
 		}
 
@@ -205,6 +206,7 @@ $("button.attack").on( "click", function() {
 		if (darth.healthPoints <= 0){
 			darth.isDefender = false;
 			darth.isDefeated = true;
+			$("div.message").html("You have defeated Darth Vader. Please choose another enemy to attack.");
 			$(".darth-d").hide();
 		}
 
@@ -236,6 +238,7 @@ $("button.attack").on( "click", function() {
 		if (boba.healthPoints <= 0){
 			boba.isDefender = false;
 			boba.isDefeated = true;
+			$("div.message").html("You have defeated Boba Fett. Please choose another enemy to attack.");
 			$(".boba-d").hide();
 		}
 
@@ -267,6 +270,7 @@ $("button.attack").on( "click", function() {
 		if (luke.healthPoints <= 0){
 			luke.isDefender = false;
 			luke.isDefeated = true;
+			$("div.message").html("You have defeated Luke Skywalker. Please choose another enemy to attack.");
 			$(".luke-d").hide();
 		}
 
@@ -298,6 +302,7 @@ $("button.attack").on( "click", function() {
 		if (han.healthPoints <= 0){
 			han.isDefender = false;
 			han.isDefeated = true;
+			$("div.message").html("You have defeated Han Solo. Please choose another enemy to attack.");
 			$(".han-d").hide();
 		}
 
@@ -329,6 +334,7 @@ $("button.attack").on( "click", function() {
 		if (boba.healthPoints <= 0){
 			boba.isDefender = false;
 			boba.isDefeated = true;
+			$("div.message").html("You have defeated Boba Fett. Please choose another enemy to attack.");
 			$(".boba-d").hide();
 		}
 
@@ -360,6 +366,7 @@ $("button.attack").on( "click", function() {
 		if (luke.healthPoints <= 0){
 			luke.isDefender = false;
 			luke.isDefeated = true;
+			$("div.message").html("You have defeated Luke Skywalker. Please choose another enemy to attack.");
 			$(".luke-d").hide();
 		}
 
@@ -391,6 +398,7 @@ $("button.attack").on( "click", function() {
 		if (darth.healthPoints <= 0){
 			darth.isDefender = false;
 			darth.isDefeated = true;
+			$("div.message").html("You have defeated Darth Vader. Please choose another enemy to attack.");
 			$(".darth-d").hide();
 		}
 
@@ -422,6 +430,7 @@ $("button.attack").on( "click", function() {
 		if (boba.healthPoints <= 0){
 			boba.isDefender = false;
 			boba.isDefeated = true;
+			$("div.message").html("You have defeated Boba Fett. Please choose another enemy to attack.");
 			$(".boba-d").hide();
 		}
 
@@ -453,6 +462,7 @@ $("button.attack").on( "click", function() {
 		if (luke.healthPoints <= 0){
 			luke.isDefender = false;
 			luke.isDefeated = true;
+			$("div.message").html("You have defeated Luke Skywalker. Please choose another enemy to attack.");
 			$(".luke-d").hide();
 		}
 
@@ -484,6 +494,7 @@ $("button.attack").on( "click", function() {
 		if (han.healthPoints <= 0){
 			han.isDefender = false;
 			han.isDefeated = true;
+			$("div.message").html("You have defeated Han Solo. Please choose another enemy to attack.");
 			$(".han-d").hide();
 		}
 
@@ -515,6 +526,7 @@ $("button.attack").on( "click", function() {
 		if (darth.healthPoints <= 0){
 			darth.isDefender = false;
 			darth.isDefeated = true;
+			$("div.message").html("You have defeated Darth Vader. Please choose another enemy to attack.");
 			$(".darth-d").hide();
 		}
 
