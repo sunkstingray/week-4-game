@@ -1,0 +1,113 @@
+body {
+	background: #bbb; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, #bbb, #000); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #bbb, #000); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #bbb, #000); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #bbb, #000); /* Standard syntax */
+	height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+	font-family: 'Kanit', sans-serif;
+	margin-top: 10px;
+}
+
+.jumbotron h1 {
+	font-size: 50px; 
+}
+
+h2 {
+	font-family: 'Orbitron', sans-serif;
+	color: #e8f442;
+	text-shadow: 2px 2px 6px black;
+	font-size: 22px;
+	margin-top: 10px;
+}
+
+.jumboCustom {
+	background-color: black;
+	color: #e8f442;
+	margin-top: 10px;
+	margin-bottom: 0;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.blockSection {
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 0px;
+}
+
+.yc {
+	cursor: pointer;
+}
+
+.panel-body {
+	padding: 0px;
+}
+
+.panel-heading {
+	padding: 0px;
+}
+
+.panel-footer {
+	padding: 0px;
+}
+
+.luke-ea {
+	display: none;
+}
+
+.han-ea {
+	display: none;
+}
+.darth-ea {
+	display: none;
+}
+.boba-ea {
+	display: none;
+}
+
+.luke-d {
+	display: none;
+}
+
+.han-d {
+	display: none;
+}
+.darth-d {
+	display: none;
+}
+.boba-d {
+	display: none;
+}
+
+.fight {
+	background-color: #111;
+	border: 1px solid #666;
+	border-radius: 6px;
+	padding:10px;
+	vertical-align: middle;
+}
+
+
+
+.message {
+	font-family: 'VT323', monospace;
+	font-size: 20px;
+	color: #3be53b;
+	padding-left: 40px;
+	line-height: 115%;
+}
+
+/*.btn {
+	margin-top: 16px;
+}*/
+
+.reset {
+	display: none;
+}
