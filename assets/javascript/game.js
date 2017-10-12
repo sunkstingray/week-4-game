@@ -5,8 +5,8 @@ var aP = 0;
 var luke = {
 	name: "Luke Skywalker",
 	healthPoints: 120,
-	attackPower: 12,
-	counterAttackPower: 5,
+	attackPower: 13,
+	counterAttackPower: 14,
 	amChosen: false,
 	isDefender: false,
 	isDefeated: false
@@ -14,9 +14,9 @@ var luke = {
 
 var han = {
 	name: "Han Solo",
-	healthPoints: 100,
-	attackPower: 9,
-	counterAttackPower: 20,
+	healthPoints: 110,
+	attackPower: 20,
+	counterAttackPower: 5,
 	amChosen: false,
 	isDefender: false,
 	isDefeated: false
@@ -24,9 +24,9 @@ var han = {
 
 var darth = {
 	name: "Darth Vader",
-	healthPoints: 180,
-	attackPower: 6,
-	counterAttackPower: 25,
+	healthPoints: 220,
+	attackPower: 7,
+	counterAttackPower: 14,
 	amChosen: false,
 	isDefender: false,
 	isDefeated: false
@@ -34,8 +34,8 @@ var darth = {
 
 var boba = {
 	name: "Boba Fett",
-	healthPoints: 150,
-	attackPower: 8,
+	healthPoints: 160,
+	attackPower: 5,
 	counterAttackPower: 20,
 	amChosen: false,
 	isDefender: false,
@@ -185,9 +185,12 @@ $("button.attack").on( "click", function() {
 		}
 
 		if (han.isDefeated === true && darth.isDefeated === true && boba.isDefeated === true){
-			$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
-			$(".attack").hide();
-			$(".reset").show();
+			if (luke.healthPoints < 0){
+				$("div.message").html("IT'S A DRAW! <br>Press the reset button to play again.");
+			}
+			else {$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
+				$(".attack").hide();
+				$(".reset").show();}
 		}
 		
 	}
@@ -217,9 +220,12 @@ $("button.attack").on( "click", function() {
 		}
 
 		if (darth.isDefeated === true && han.isDefeated === true && boba.isDefeated === true){
-			$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
-			$(".attack").hide();
-			$(".reset").show();
+			if (luke.healthPoints < 0){
+				$("div.message").html("IT'S A DRAW! <br>Press the reset button to play again.");
+			}
+			else {$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
+				$(".attack").hide();
+				$(".reset").show();}
 		}
 		
 	}
@@ -249,9 +255,12 @@ $("button.attack").on( "click", function() {
 		}
 
 		if (boba.isDefeated === true && han.isDefeated === true && darth.isDefeated === true){
-			$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
-			$(".attack").hide();
-			$(".reset").show();
+			if (luke.healthPoints < 0){
+				$("div.message").html("IT'S A DRAW! <br>Press the reset button to play again.");
+			}
+			else {$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
+				$(".attack").hide();
+				$(".reset").show();}
 		}
 		
 	}
@@ -281,9 +290,12 @@ $("button.attack").on( "click", function() {
 		}
 
 		if (luke.isDefeated === true && han.isDefeated === true && boba.isDefeated === true){
-			$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
-			$(".attack").hide();
-			$(".reset").show();
+			if (darth.healthPoints < 0){
+				$("div.message").html("IT'S A DRAW! <br>Press the reset button to play again.");
+			}
+			else {$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
+				$(".attack").hide();
+				$(".reset").show();}
 		}
 		
 	}
@@ -313,9 +325,12 @@ $("button.attack").on( "click", function() {
 		}
 
 		if (luke.isDefeated === true && han.isDefeated === true && boba.isDefeated === true){
-			$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
-			$(".attack").hide();
-			$(".reset").show();
+			if (darth.healthPoints < 0){
+				$("div.message").html("IT'S A DRAW! <br>Press the reset button to play again.");
+			}
+			else {$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
+				$(".attack").hide();
+				$(".reset").show();}
 		}
 		
 	}
@@ -345,9 +360,12 @@ $("button.attack").on( "click", function() {
 		}
 
 		if (luke.isDefeated === true && han.isDefeated === true && boba.isDefeated === true){
-			$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
-			$(".attack").hide();
-			$(".reset").show();
+			if (darth.healthPoints < 0){
+				$("div.message").html("IT'S A DRAW! <br>Press the reset button to play again.");
+			}
+			else {$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
+				$(".attack").hide();
+				$(".reset").show();}
 		}
 		
 	}
@@ -377,9 +395,12 @@ $("button.attack").on( "click", function() {
 		}
 
 		if (darth.isDefeated === true && luke.isDefeated === true && boba.isDefeated === true){
-			$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
-			$(".attack").hide();
-			$(".reset").show();
+			if (han.healthPoints < 0){
+				$("div.message").html("IT'S A DRAW! <br>Press the reset button to play again.");
+			}
+			else {$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
+				$(".attack").hide();
+				$(".reset").show();}
 		}
 		
 	}
@@ -409,9 +430,12 @@ $("button.attack").on( "click", function() {
 		}
 
 		if (darth.isDefeated === true && luke.isDefeated === true && boba.isDefeated === true){
-			$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
-			$(".attack").hide();
-			$(".reset").show();
+			if (han.healthPoints < 0){
+				$("div.message").html("IT'S A DRAW! <br>Press the reset button to play again.");
+			}
+			else {$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
+				$(".attack").hide();
+				$(".reset").show();}
 		}
 		
 	}
@@ -441,9 +465,12 @@ $("button.attack").on( "click", function() {
 		}
 
 		if (darth.isDefeated === true && luke.isDefeated === true && boba.isDefeated === true){
-			$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
-			$(".attack").hide();
-			$(".reset").show();
+			if (han.healthPoints < 0){
+				$("div.message").html("IT'S A DRAW! <br>Press the reset button to play again.");
+			}
+			else {$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
+				$(".attack").hide();
+				$(".reset").show();}
 		}
 		
 	}
@@ -473,9 +500,12 @@ $("button.attack").on( "click", function() {
 		}
 
 		if (darth.isDefeated === true && han.isDefeated === true && luke.isDefeated === true){
-			$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
-			$(".attack").hide();
-			$(".reset").show();
+			if (boba.healthPoints < 0){
+				$("div.message").html("IT'S A DRAW! <br>Press the reset button to play again.");
+			}
+			else {$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
+				$(".attack").hide();
+				$(".reset").show();}
 		}
 		
 	}
@@ -483,12 +513,12 @@ $("button.attack").on( "click", function() {
 
 	// boba vs han
 
-	if(han.isDefender === true && luke.amChosen === true){
-		aP += luke.attackPower;
+	if(han.isDefender === true && boba.amChosen === true){
+		aP += boba.attackPower;
 		han.healthPoints -= aP;
 		$("div.han-hp").text(han.healthPoints);
-		luke.healthPoints -= han.counterAttackPower;
-		$("div.luke-hp").text(luke.healthPoints);
+		boba.healthPoints -= han.counterAttackPower;
+		$("div.boba-hp").text(boba.healthPoints);
 		$("div.message").html("You attacked Han Solo for a "+aP+" point loss. <br> Han Solo attacked you for a "+han.counterAttackPower+" point loss.");
 
 		if (han.healthPoints <= 0){
@@ -498,16 +528,19 @@ $("button.attack").on( "click", function() {
 			$(".han-d").hide();
 		}
 
-		if(luke.healthPoints <= 0){
+		if(boba.healthPoints <= 0){
 			$("div.message").html("You have been defeated. Press the reset button to play again.");
 			$(".attack").hide();
 			$(".reset").show();
 		}
 
 		if (darth.isDefeated === true && han.isDefeated === true && luke.isDefeated === true){
-			$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
-			$(".attack").hide();
-			$(".reset").show();
+			if (boba.healthPoints < 0){
+				$("div.message").html("IT'S A DRAW! <br>Press the reset button to play again.");
+			}
+			else {$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
+				$(".attack").hide();
+				$(".reset").show();}
 		}
 		
 	}
@@ -537,9 +570,12 @@ $("button.attack").on( "click", function() {
 		}
 
 		if (darth.isDefeated === true && han.isDefeated === true && luke.isDefeated === true){
-			$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
-			$(".attack").hide();
-			$(".reset").show();
+			if (boba.healthPoints < 0){
+				$("div.message").html("IT'S A DRAW! <br>Press the reset button to play again.");
+			}
+			else {$("div.message").html("CONGRATULTIONS! You have defeated all of your enemies. <br>Press the reset button to play again.");
+				$(".attack").hide();
+				$(".reset").show();}
 		}
 		
 	}
